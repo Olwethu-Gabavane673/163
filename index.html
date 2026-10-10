@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080c14" />
+    <meta
+      name="description"
+      content="Olwethu Ngalo — interactive 3D portfolio, technical support, printer hardware and Java."
+    />
+    <meta
+      property="og:title"
+      content="Olwethu Ngalo — Field Notes from the Orbit"
+    />
+    <meta
+      property="og:description"
+      content="An interactive 3D portfolio exploring technical support, printer systems and Java development."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/olwethu-orbit.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Olwethu Ngalo — Field Notes from the Orbit</title>
+  </head>
+  <body class="min-h-screen bg-[#080c14] text-white antialiased">
+    <a class="skip-link" href="#portfolio-content">Skip to portfolio content</a>
+    <div id="app" class="relative min-h-screen overflow-hidden">
+      <div id="scene-shell" class="scene-shell" aria-hidden="true">
+        <div id="canvas-host" class="canvas-host"></div>
+        <div class="scene-vignette"></div>
+        <div class="scene-grid"></div>
+        <div id="scene-fallback" class="scene-fallback" hidden>
+          WebGL is unavailable in this browser. The complete CV and navigation
+          remain available below.
+        </div>
+      </div>
+      <div
+        id="boot-overlay"
+        class="boot-overlay"
+        role="status"
+        aria-live="polite"
+      >
+        <div class="boot-panel">
+          <span class="boot-mark" aria-hidden="true">N<span>·</span></span>
+          <div>
+            <strong>SYNCING THE ATLAS</strong
+            ><small>ASSEMBLING LIVE 3D NODES</small>
+          </div>
+          <span class="boot-progress" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <header id="top" class="site-header">
+        <a
+          class="brand-lockup"
+          href="#top"
+          data-section="overview"
+          aria-label="Olwethu Ngalo, overview"
+        >
+          <span class="brand-mark" aria-hidden="true"
+            ><span></span><span></span><span></span
+          ></span>
+          <span class="brand-copy"
+            ><strong>OLWETHU NGALO</strong
+            ><small>TECH SUPPORT / SYSTEMS</small></span
+          >
+        </a>
+        <div class="header-state">
+          <span class="live-dot"></span><span>FIELD SYSTEMS ONLINE</span
+          ><span class="state-slash">/</span><span>26.10</span>
+        </div>
+        <button
+          id="motion-toggle"
+          class="motion-toggle"
+          type="button"
+          aria-pressed="true"
+          title="Pause or resume ambient motion"
+        >
+          <span class="motion-bars" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          ><span id="motion-label">MOTION ON</span>
+        </button>
+      </header>
+
+      <nav class="station-nav" aria-label="Portfolio sections">
+        <div class="nav-caption">
+          <span>ATLAS / 06</span><span class="nav-line"></span>
+        </div>
+        <div class="nav-items">
+          <button
+            class="nav-link is-active"
+            type="button"
+            data-section="overview"
+            aria-current="page"
+          >
+            <span class="nav-number">00</span><span>Overview</span><i></i>
+          </button>
+          <button class="nav-link" type="button" data-section="skills">
+            <span class="nav-number">01</span><span>Skills</span><i></i>
+          </button>
+          <button class="nav-link" type="button" data-section="raydian">
+            <span class="nav-number">02</span><span>Raydian</span><i></i>
+          </button>
+          <button class="nav-link" type="button" data-section="bemba">
+            <span class="nav-number">03</span><span>BEMBA IT</span><i></i>
+          </button>
+          <button class="nav-link" type="button" data-section="education">
+            <span class="nav-number">04</span><span>Education</span><i></i>
+          </button>
+          <button class="nav-link" type="button" data-section="contact">
+            <span class="nav-number">05</span><span>Contact</span><i></i>
+          </button>
+        </div>
+        <button class="map-reset" type="button" data-section="overview">
+          <span class="map-glyph" aria-hidden="true">⌖</span> RESET ORBIT
+        </button>
+      </nav>
+
+      <main id="portfolio-content" class="portfolio-main">
+        <section
+          id="content-panel"
+          class="content-panel"
+          aria-live="polite"
+          aria-atomic="true"
+          tabindex="-1"
+        >
+          <div id="section-content"></div>
+        </section>
+        <aside class="scene-hud" aria-hidden="true">
+          <div class="hud-coordinate">ORBITAL GRID<br />NODE 01 / 06</div>
+          <div class="hud-reticle"><span></span><i></i></div>
+          <div class="hud-section">
+            <span id="hud-index">00</span><span class="hud-divider"></span
+            ><span id="hud-name">ORBIT / OVERVIEW</span>
+          </div>
+          <div class="hud-instruction">
+            <span class="drag-icon">↔</span> DRAG TO ROTATE
+            <span class="hud-bullet">·</span> SCROLL TO ZOOM
+          </div>
+        </aside>
+      </main>
+
+      <div class="resume-tape" aria-label="Animated CV experience highlights">
+        <span class="tape-label">CV / LIVE FEED</span>
+        <div class="tape-viewport">
+          <div id="resume-tape-track" class="tape-track"></div>
+        </div>
+        <span class="tape-index">NG—01 / 06</span>
+      </div>
+
+      <div class="page-footer">
+        <span>OLWETHU NGALO <i>·</i> TECHNICAL SUPPORT / SYSTEMS</span
+        ><span>BUILT FOR THE NEXT SYSTEM.</span>
+      </div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+# Portfolio delivery ToDo
+
+## [x] Immersive, accessible 3D portfolio environment
+Create a fully functional, live-running interactive 3D WebGL developer portfolio built with HTML, CSS, JavaScript, Tailwind CSS, Three.js and GSAP—not a pre-rendered video. Use an original cinematic multi-room environment or interactive galaxy-map structure in which each resume area is a physical or abstract 3D monument. Include fluid transitions, responsive navigation linking the career objective, skills, experience, education and certifications, and contact areas, keyboard support, readable content, reduced-motion handling, mobile-friendly behavior, accessible alternatives, loading and fallback states, and production-ready organized source.
+
+## [x] Career objective and dynamic CV experience showcase
+Present Olwethu Ngalo’s supplied career objective: “Dedicated IT professional combining hands-on printer hardware maintenance and office automation experience with a strong foundation in system support and Java programming. Seeking to leverage technical troubleshooting and problem-solving skills in a dynamic IT Support or Systems Development role.” Make the experience showcase layout itself animate, with the preserved CV wording presented as dynamic spatial/3D scrolling typography embedded in the environment rather than a static conventional page.
+
+## [x] Raydian Print & Office Automation Solutions internship scene
+Show Technician (Printer Hardware & Office Automation) Intern at Raydian Print & Office Automation Solutions, June 2026–September 2026. Feature an actual custom 3D printer asset alongside a large production-printer asset, both with morphing animations. Preserve all duties: diagnosing, dismantling and repairing mechanical and electrical printer hardware components; supporting on-site and workshop setup of new multi-function printers (MFPs), configuring network connectivity and client-side driver software; systematic troubleshooting for error codes, paper feeds, print quality and connectivity; routine preventive maintenance and component replacement (fusers, rollers and maintenance kits); providing operational guidance to end-users; and keeping accurate maintenance logs and service records.
+
+## [x] BEMBA IT Solutions internship scene
+Show Technical Support Intern at BEMBA IT Solutions, October 2025–May 2026. Feature a highly detailed interactive gaming desktop rig with component-focused animations. Preserve all duties: systematic troubleshooting, component-level testing and fault isolation across standard desktops, workstations and high-performance gaming PCs; complete teardowns and builds with precise component installation, proper cable management and optimal thermal performance; evaluate performance bottlenecks and upgrade CPUs, GPUs, RAM, motherboards, power supplies and HDD/SSD drives; install, configure and activate operating systems with driver integration, updates and baseline software setup; rigorous stress testing, benchmarking and diagnostics after repair to guarantee stability and performance before handover.
+
+## [x] Tech stack, skills and animated logos
+Include every supplied skill: Java; Technical support; Analytical Problem Solving; Printer Hardware Maintenance MFP; JDK; JRE; Logic; Mathematics; Programming; MySql; Equipment Servicing; Client-Side Support and User Guidance. The Tech Stack monument must include animated, morphing 3D Java and MySQL logos and visual representations of the remaining skills.
+
+## [x] Education, training and certification timeline
+Include all five CV milestones with institution/issuer and date: 2025 — Java Certified Foundations Associate, issued by Oracle; 2024 — Technical Support Fundamentals, Coursera, an online course authorized by Google and offered through Coursera; 2023 — NQF Level 5 System development & System support, On The Ball College; 2021 — Higher Certificate in Information Systems, Nelson Mandela University; 2019 — Matric, Bardale Secondary School. Preserve the Coursera certificate details: dated October 20, 2024, completed by Olwethu Ngalo and signed by Amanda Brophy, Global Director of Google Career Certificates; include clickable verification link https://coursera.org/verify/TKMY7MIR64MJ.
+
+## [x] Contact and complete CV coverage
+Include custom interactive 3D icons and accessible functional links for every supplied contact/social link. The CV supplies phone 075-021-1548 and email olwethungalo@bardalesec.org.za. Preserve the user's name and the full career objective, skills, experience, education and certificate details throughout the accessible presentation.
+
+## [x] Production-ready source and documentation
+Deliver complete organized source code and detailed documentation explaining how to install and run the website locally, its production/build serving approach, code architecture, how to navigate/interact with the 3D world, how the custom printer, production printer, gaming PC, Java/MySQL logos and contact icons are modeled and animate, and the accessibility, responsive, reduced-motion, loading and fallback behavior.
